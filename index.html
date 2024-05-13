@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./image/download.png" type="image/x-icon">
+
+    <!-- title -->
+    <title>Crmeans</title>
+    <!-- title -->
+
+    <!-- css link -->
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- css link -->
+
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <!-- font link -->
+
+    <!-- icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- icon link -->
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="header">
+        <div class="logo">
+            <img src="./image/download (1).png" alt="Logo">
+        </div>
+
+        <button class="menu-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Make Money</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Virtual Number</a></li>
+        </ul>
+    </header>
+    <!-- header -->
+
+    <!-- section one -->
+    <section>
+        <div>
+            <h1>Welcome To</h1>
+            <img src="./image/download (1).png" alt="">
+
+            <p>Nigeria's topmost enterprise solution to your telecom needs.<br>
+                Airtime, DATA, Cable Subscription (DSTV, GOTV, Startime), and<br>
+                Virtual Numbers for online subscriptions like WhatsApp, Netflix, <br>
+                Amazon Prime, Google Accounts, and various social media platforms.<br><br> </p>
+
+
+            <div class="app-buttons">
+                <a href="https://www.apple.com/ios/app-store/" class="btn btn-iphone">
+                    <img src="./image/download (3).png" alt="Apple Logo">
+                    <span>Get on iPhone</span>
+                </a>
+                <a href="https://play.google.com/store" class="btn btn-android">
+                    <img src="./image/google-play-2022-logo-freelogovectors.net_-640x480.png" alt="Android Logo">
+                    <span>Get on Android</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- section one -->
+
+
+</body>
+<script>
+    function toggleMenu() {
+        let menu = document.querySelector('.nav-links');
+        if (getComputedStyle(menu).display === 'none') {
+            menu.style.display = 'flex';
+            menu.style.opacity = '1';
+            menu.style.transform = 'translateY(0%)';
+        } else {
+            menu.style.display = 'none';
+            menu.style.opacity = '0';
+            menu.style.transform = 'translateY(100%)';
+        }
+    }
+
+    window.addEventListener('resize', function () {
+        let menu = document.querySelector('.nav-links');
+        if (window.innerWidth > 1000) {
+            menu.style.display = 'flex';
+            menu.style.opacity = '1';
+            menu.style.transform = 'translateY(0%)';
+        } else if (menu.style.display === 'flex' && window.innerWidth <= 1000) {
+            menu.style.display = 'none';
+            menu.style.opacity = '0';
+            menu.style.transform = 'translateY(100%)';
+        }
+    });
+</script>
+
+
+</html>
