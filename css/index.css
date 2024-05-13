@@ -2,14 +2,16 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
+    font-family: Nunito, sans-serif;
 }
 
 header {
     background-color: #15151F;
-    padding: 50px 90px;
+    padding: 30px 90px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border: none !important;
 }
 
 .header .logo img {
@@ -117,11 +119,72 @@ p {
     background-color: #000;
 }
 
+#features-container {
+    background-color: #f3f4f6;
+    padding: 64px 90px;
+    text-align: center;
+}
+
+#features-container h2 {
+    font-size: 32px;
+    margin-bottom: 8px;
+    color: #15151F;
+    font-weight: 700;
+    font-family: Nunito, sans-serif;
+}
+
+#features-container p {
+    font-size: 16px;
+    margin-bottom: 32px;
+    font-weight: 700;
+    font-family: Nunito, sans-serif;
+    color: #17BEB6;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+    gap: 24px;
+    padding: 0 16px;
+}
+
+.feature-card {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 50px 25px;
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    cursor: pointer;
+}
+
+.feature-card img {
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.feature-card h3 {
+    color: #17BEB6;
+    font-size: 16px;
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+
+.feature-card p {
+    color: #15151F !important;
+    font-size: 13px !important;
+    font-weight: 400 !important;
+}
+
 
 @media (max-width: 1000px) {
 
     header {
         padding: 30px 40px;
+        border: none !important;
     }
 
     .nav-links {
@@ -154,6 +217,12 @@ p {
         height: 110dvh;
     }
 
+    #features-container {
+        background-color: #f3f4f6;
+        padding: 64px 10px;
+        text-align: center;
+    }
+
 }
 
 @media (max-width: 500px) {
@@ -170,11 +239,11 @@ p {
     section div img {
         width: 7rem;
     }
-    
+
     h1 {
         font-size: 1.8rem;
     }
-    
+
     p {
         font-size: 10px;
         line-height: 20px;
