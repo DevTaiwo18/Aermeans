@@ -164,7 +164,8 @@ p {
 
     section {
         padding: 0px 20px 0 20px;
-        height: 100dvh;
+        height: 80dvh;
+        background-image: none !important;
     }
 
     section div img {
