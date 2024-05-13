@@ -10,7 +10,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #ffffff;
 }
 
 .header .logo img {
@@ -139,6 +138,7 @@ p {
         opacity: 0;
         transform: translateY(100%);
         transition: transform 1s, opacity 1s;
+        border-top: 1px solid #ffffff;
     }
 
     .nav-links li a {
