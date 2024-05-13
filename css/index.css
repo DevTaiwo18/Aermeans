@@ -7,7 +7,7 @@
 
 header {
     background-color: #15151F;
-    padding: 30px 90px;
+    padding: 40px 90px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -152,7 +152,7 @@ p {
     background-color: #ffffff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    padding: 50px 25px;
+    padding: 50px 20px;
     transition: transform 0.3s;
 }
 
@@ -179,8 +179,201 @@ p {
     font-weight: 400 !important;
 }
 
+#makemoney.container {
+    max-width: 1200px;
+    padding: 20px;
+    margin: auto;
+    background-color: white;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.make-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: start;
+}
+
+.image-full {
+    width: 100%;
+    max-width: 600px;
+}
+
+.content {
+    text-align: justify;
+}
+
+.title-small {
+    font-size: 20px;
+    color: #17BEB6;
+    font-weight: bold;
+    margin-bottom: 14px;
+}
+
+.title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #15151F;
+    line-height: 1;
+}
+
+.text {
+    color: #4A5568;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#aboutus.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.content-area {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-section {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+}
+
+.section-heading,
+.section-subheading {
+    color: #17BEB6;
+    font-weight: bold;
+}
+
+.section-heading {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.section-subheading {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.description-text {
+    color: #4A5568;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.make-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.image-section {
+    flex: 1;
+    padding: 10px;
+}
+
+.full-width {
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+    background-color: #15151F; 
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px; 
+    padding: 40px;
+    gap: 1rem;
+}
+
+.logo img {
+    width: 120px; 
+}
+
+.app-footer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.app-footer img {
+    width: 30px; 
+    margin-right: 10px;
+}
+
+.app-footer span {
+    font-weight: bold;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .app-footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .flex-container {
+        flex-direction: row;
+    }
+
+    #aboutus.container {
+        flex-direction: row;
+    }
+
+    .content-area {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .text-section {
+        text-align: left;
+        padding: 20px;
+    }
+
+    .make-buttons {
+        justify-content: start;
+    }
+}
 
 @media (max-width: 1000px) {
+
+    .content {
+        text-align: center;
+    }
 
     header {
         padding: 30px 40px;
