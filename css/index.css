@@ -292,7 +292,7 @@ p {
 }
 
 .footer {
-    background-color: #15151F; 
+    background-color: #15151F;
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -302,13 +302,13 @@ p {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
     padding: 40px;
     gap: 1rem;
 }
 
 .logo img {
-    width: 120px; 
+    width: 120px;
 }
 
 .app-footer {
@@ -318,7 +318,7 @@ p {
 }
 
 .app-footer img {
-    width: 30px; 
+    width: 30px;
     margin-right: 10px;
 }
 
@@ -330,6 +330,143 @@ p {
     font-size: 14px;
     margin: 0;
 }
+
+#virtualnumber .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px 90px;
+    background-color: #15151F;
+    margin: auto;
+}
+
+@media (min-width: 768px) {
+    #virtualnumber .container {
+        flex-direction: row;
+    }
+}
+
+#virtualnumber .image-container,
+#virtualnumber .text-container {
+    flex: 1;
+    padding: 20px;
+}
+
+#virtualnumber .image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+#virtualnumber .text-container {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#virtualnumber h1 {
+    font-size: 28px;
+    color: #17BEB6;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+#virtualnumber p {
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 1.8;
+    margin-bottom: 5px;
+}
+
+#virtualnumber .make-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+#virtualnumber .btn {
+    background-color: #17BEB6;
+    color: #15151F;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 300ms ease-in-out;
+}
+
+#virtualnumber .btn img {
+    margin-right: 5px;
+}
+
+#virtualnumber .btn span {
+    display: block;
+}
+
+.accordion {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    padding: 30px 10px;
+}
+
+.accordion-title {
+    text-align: center;
+    color: #15151F;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.accordion-item {
+    background-color: #e8f0fe;
+    border: 1px solid #17BEB6;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.accordion-toggle {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    border: none;
+    background-color: #17BEB6;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    font-size: 16px;
+}
+
+.accordion-toggle .icon {
+    float: right;
+    transition: transform 0.3s ease;
+}
+
+.accordion-toggle.active .icon {
+    transform: rotate(-180deg);
+}
+
+.accordion-toggle:hover {
+    background-color: #17beb6c1;
+}
+
+.accordion-content {
+    background-color: white;
+    display: none;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+}
+
+.accordion-content p {
+    margin: 0;
+    color: #15151F;
+}
+
+
 
 @media (max-width: 768px) {
     .footer-content {
@@ -416,6 +553,11 @@ p {
         text-align: center;
     }
 
+
+    #virtualnumber .container {
+        padding: 40px 40px;
+    }
+
 }
 
 @media (max-width: 500px) {
@@ -451,5 +593,16 @@ p {
         width: 20px;
         height: 20px;
         margin-right: 5px;
+    }
+
+    #virtualnumber .text-container {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #virtualnumber .container {
+        padding: 40px 10px;
     }
 }
