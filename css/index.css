@@ -605,4 +605,8 @@ p {
     #virtualnumber .container {
         padding: 40px 10px;
     }
+
+    .accordion-toggle {
+        font-size: 14px;
+    }
 }
