@@ -69,7 +69,7 @@ section div img {
     margin-bottom: 1.5rem;
 }
 
-h1 {
+section div h1 {
     color: #2087FE;
     font-size: 2.3rem;
     margin: 0 0 20px;
@@ -78,7 +78,7 @@ h1 {
     font-family: Nunito, sans-serif;
 }
 
-p {
+section div p {
     color: #ffffff;
     font-size: 14px;
     line-height: 24px;
@@ -652,7 +652,7 @@ p {
     }
 
     p {
-        font-size: 10px;
+        font-size: 15px;
         line-height: 20px;
     }
 
@@ -680,5 +680,10 @@ p {
 
     .accordion-toggle {
         font-size: 14px;
+    }
+
+    section div img {
+        width: 11rem;
+        margin-bottom: 1.5rem;
     }
 }
