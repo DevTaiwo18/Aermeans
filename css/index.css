@@ -652,7 +652,7 @@ section div p {
     }
 
     p {
-        font-size: 15px;
+        font-size: 13px;
         line-height: 20px;
     }
 
@@ -685,5 +685,13 @@ section div p {
     section div img {
         width: 11rem;
         margin-bottom: 1.5rem;
+    }
+
+    section div p {
+        color: #ffffff;
+        font-size: 12px;
+        line-height: 24px;
+        font-weight: 400;
+        font-family: Nunito, sans-serif;
     }
 }
