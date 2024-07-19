@@ -536,10 +536,6 @@ p {
 }
 
 @media (min-width: 768px) {
-    #virtualnumber .container {
-        flex-direction: row;
-    }
-
     .flex-container {
         flex-direction: row;
     }
@@ -563,7 +559,6 @@ p {
         justify-content: start;
     }
 }
-
 
 @media (max-width: 1000px) {
 
@@ -612,6 +607,7 @@ p {
         text-align: center;
     }
 
+
     #virtualnumber .container {
         padding: 40px 40px;
     }
@@ -633,8 +629,8 @@ p {
         display: flex;
         flex-direction: column;
     }
-}
 
+}
 
 @media (max-width: 500px) {
     header {
@@ -652,11 +648,11 @@ p {
     }
 
     h1 {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
     }
 
     p {
-        font-size: 20px;
+        font-size: 10px;
         line-height: 20px;
     }
 
